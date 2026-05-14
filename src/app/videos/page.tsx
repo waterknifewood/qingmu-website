@@ -55,13 +55,12 @@ export default function VideosPage() {
               preload="metadata"
               className="w-full aspect-video"
             >
-              <source src="/videos/documentary.mov" type="video/mp4" />
-              <source src="/videos/documentary.mov" type="video/quicktime" />
+              <source src="/videos/documentary.mp4" type="video/mp4" />
               您的浏览器不支持此视频格式。
             </video>
           </div>
           <p className="text-xs text-muted mt-4 text-center">
-            如无法播放，可<a href="/videos/documentary.mov" download className="text-accent hover:text-accent-dim underline underline-offset-2 transition-colors">点击下载</a>后本地观看（1.7 GB）
+            如无法播放，可<a href="/videos/documentary.mp4" download className="text-accent hover:text-accent-dim underline underline-offset-2 transition-colors">点击下载</a>后本地观看（92 MB）
           </p>
         </div>
 
