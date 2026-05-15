@@ -18,10 +18,12 @@ export default function HongFuDetailPage() {
       {/* Album header */}
       <div className="bg-surface rounded-lg border border-surface overflow-hidden mb-16">
         <div className="grid md:grid-cols-[300px_1fr] gap-0">
-          <div className="aspect-[1/1] bg-background flex items-center justify-center">
-            <span className="text-6xl font-serif text-accent-dim">
-              {album.title[0]}
-            </span>
+          <div className="aspect-[1/1] bg-background overflow-hidden">
+            <img
+              src={album.coverImage}
+              alt={album.title}
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="p-6 md:p-8 flex flex-col">
             <div className="flex items-start justify-between mb-4">
@@ -42,7 +44,7 @@ export default function HongFuDetailPage() {
               {album.description}
             </p>
 
-            <TrackList tracks={album.tracks} />
+            <TrackList tracks={album.tracks} mode="anchor" />
 
             <Link
               href="/records"
@@ -62,7 +64,7 @@ export default function HongFuDetailPage() {
         </p>
 
         {/* 幻楼 */}
-        <div className="mb-20">
+        <div id="track-huan-lou" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">01</span>
             <h3 className="text-xl font-serif font-bold text-accent">幻楼</h3>
@@ -91,7 +93,7 @@ export default function HongFuDetailPage() {
         </div>
 
         {/* 天罗地网 */}
-        <div className="mb-20">
+        <div id="track-tian-luo-di-wang" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">02</span>
             <h3 className="text-xl font-serif font-bold text-accent">天罗地网</h3>
@@ -122,7 +124,7 @@ export default function HongFuDetailPage() {
         </div>
 
         {/* 红拂夜奔 */}
-        <div className="mb-20">
+        <div id="track-hong-fu-ye-ben" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">03</span>
             <h3 className="text-xl font-serif font-bold text-accent">红拂夜奔</h3>
@@ -155,7 +157,7 @@ export default function HongFuDetailPage() {
         </div>
 
         {/* 公无渡河 */}
-        <div className="mb-20">
+        <div id="track-gong-wu-du-he" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">04</span>
             <h3 className="text-xl font-serif font-bold text-accent">公无渡河</h3>
@@ -169,7 +171,7 @@ export default function HongFuDetailPage() {
         </div>
 
         {/* 南下列车 */}
-        <div className="mb-20">
+        <div id="track-nan-xia-lie-che" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">05</span>
             <h3 className="text-xl font-serif font-bold text-accent">南下列车</h3>
@@ -190,7 +192,7 @@ export default function HongFuDetailPage() {
         </div>
 
         {/* 风信 */}
-        <div className="mb-20">
+        <div id="track-feng-xin" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">06</span>
             <h3 className="text-xl font-serif font-bold text-accent">风信</h3>
@@ -207,7 +209,7 @@ export default function HongFuDetailPage() {
         </div>
 
         {/* 甲申祭 */}
-        <div className="mb-20">
+        <div id="track-jia-shen-ji" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">07</span>
             <h3 className="text-xl font-serif font-bold text-accent">甲申祭</h3>
@@ -238,7 +240,7 @@ export default function HongFuDetailPage() {
         </div>
 
         {/* 白虹贯日 */}
-        <div className="mb-20">
+        <div id="track-bai-hong-guan-ri" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">08</span>
             <h3 className="text-xl font-serif font-bold text-accent">白虹贯日</h3>
@@ -259,7 +261,7 @@ export default function HongFuDetailPage() {
         </div>
 
         {/* 空山 */}
-        <div className="mb-20">
+        <div id="track-kong-shan" className="mb-20">
           <div className="flex items-baseline gap-3 mb-4">
             <span className="text-xs text-accent font-mono">09</span>
             <h3 className="text-xl font-serif font-bold text-accent">空山</h3>

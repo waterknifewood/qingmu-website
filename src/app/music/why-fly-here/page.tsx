@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { TrackList } from "@/components/music/TrackList";
+import { StreamingLinks } from "@/components/music/StreamingLinks";
 import { albums } from "@/data/albums";
 
 export const metadata: Metadata = {
@@ -51,31 +52,16 @@ export default function WhyFlyHerePage() {
             )}
 
             {album.links && (
-              <div className="flex gap-3 mb-6">
-                {album.links.netease && (
-                  <a
-                    href={album.links.netease}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs bg-[#c62f2f]/20 hover:bg-[#c62f2f]/30 text-[#c62f2f] hover:text-red-400 px-3 py-1.5 rounded-full transition-colors"
-                  >
-                    网易云音乐
-                  </a>
-                )}
-                {album.links.qq && (
-                  <a
-                    href={album.links.qq}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center gap-1.5 text-xs bg-[#31c27c]/20 hover:bg-[#31c27c]/30 text-[#31c27c] hover:text-green-300 px-3 py-1.5 rounded-full transition-colors"
-                  >
-                    QQ 音乐
-                  </a>
-                )}
+              <div className="mb-6">
+                <StreamingLinks links={album.links} />
               </div>
             )}
 
-            <TrackList tracks={album.tracks} />
+            <TrackList
+              tracks={album.tracks}
+              mode="expand"
+              links={album.links}
+            />
 
             <Link
               href="/records"

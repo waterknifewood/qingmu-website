@@ -34,3 +34,7 @@ body {
   background: var(--accent-dim);
   color: var(--foreground);
 }
+
+html {
+  scroll-behavior: smooth;
+}
