@@ -16,47 +16,24 @@ export default function VideosPage() {
       </p>
 
       <div className="max-w-3xl mx-auto space-y-20">
-        {/* 育音堂 live */}
+        {/* 万语千言 PV */}
         <div>
           <h3 className="text-lg font-serif font-bold text-accent mb-4">
-            为何飞来 | 青木乐队在育音堂
+            万语千言 终成决堤之声
           </h3>
           <p className="text-xs text-muted mb-4 uppercase tracking-widest">
-            2025.07.24 · YYT Channel · 上海育音堂
+            2026 · 潮起 PV · 排练混剪
           </p>
           <p className="text-sm text-muted leading-relaxed mb-6 max-w-xl">
-            青木乐队首次正式登台。从排练房的汗水到舞台上的灯光，所有的紧张、激动与不安，都在第一声鼓点响起时化为力量。
+            多少个深夜的排练房，多少次反复的推敲与打磨，万语千言，终成决堤之声。
           </p>
           <div className="bg-surface rounded-lg overflow-hidden border border-surface">
             <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
               <iframe
-                src="https://player.bilibili.com/player.html?bvid=BV1QGtZzqEPr&page=1&high_quality=1"
+                src="https://player.bilibili.com/player.html?bvid=BV1BLApzHEvk&page=1&high_quality=1"
                 className="absolute inset-0 w-full h-full"
                 allowFullScreen
-                title="为何飞来 | 青木乐队在育音堂-20250724"
-              />
-            </div>
-          </div>
-        </div>
-
-        {/* 玩家艺术节 */}
-        <div>
-          <h3 className="text-lg font-serif font-bold text-accent mb-4">
-            青木乐队 · 玩家艺术节
-          </h3>
-          <p className="text-xs text-muted mb-4 uppercase tracking-widest">
-            2025.10.06 · 玩家艺术节
-          </p>
-          <p className="text-sm text-muted leading-relaxed mb-6 max-w-xl">
-            国庆假期的户外演出。场地的自带混响恰到好处，演奏状态放松了很多，也收获了不少好评。
-          </p>
-          <div className="bg-surface rounded-lg overflow-hidden border border-surface">
-            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
-              <iframe
-                src="https://player.bilibili.com/player.html?bvid=BV1DKymBfEMD&page=1&high_quality=1"
-                className="absolute inset-0 w-full h-full"
-                allowFullScreen
-                title="青木乐队在玩家艺术节-20251006"
+                title="万语千言 终成决堤之声"
               />
             </div>
           </div>
@@ -106,11 +83,9 @@ export default function VideosPage() {
             </video>
           </div>
           <p className="text-xs text-muted mt-4 text-center">
-            如无法播放，可<a href="/videos/documentary.mp4" download className="text-accent hover:text-accent-dim underline underline-offset-2 transition-colors">点击下载</a>后本地观看（92 MB）
+            如无法播放，可<a href="/videos/documentary.mp4" download className="text-accent hover:text-accent-dim underline underline-offset-2 transition-colors">点击下载</a>后本地观看
           </p>
         </div>
-
-
 
         {/* 晨雾闪回 */}
         <div>
@@ -133,6 +108,52 @@ export default function VideosPage() {
               <source src="/videos/morning-mist-flashback.mp4" type="video/mp4" />
               您的浏览器不支持视频播放。
             </video>
+          </div>
+        </div>
+
+        {/* 育音堂 live */}
+        <div>
+          <h3 className="text-lg font-serif font-bold text-accent mb-4">
+            为何飞来 | 青木乐队在育音堂
+          </h3>
+          <p className="text-xs text-muted mb-4 uppercase tracking-widest">
+            2025.07.24 · YYT Channel · 上海育音堂
+          </p>
+          <p className="text-sm text-muted leading-relaxed mb-6 max-w-xl">
+            青木乐队首次正式登台。从排练房的汗水到舞台上的灯光，所有的紧张、激动与不安，都在第一声鼓点响起时化为力量。
+          </p>
+          <div className="bg-surface rounded-lg overflow-hidden border border-surface">
+            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+              <iframe
+                src="https://player.bilibili.com/player.html?bvid=BV1QGtZzqEPr&page=1&high_quality=1"
+                className="absolute inset-0 w-full h-full"
+                allowFullScreen
+                title="为何飞来 | 青木乐队在育音堂-20250724"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* 玩家艺术节 */}
+        <div>
+          <h3 className="text-lg font-serif font-bold text-accent mb-4">
+            青木乐队 · 玩家艺术节
+          </h3>
+          <p className="text-xs text-muted mb-4 uppercase tracking-widest">
+            2025.10.06 · 玩家艺术节
+          </p>
+          <p className="text-sm text-muted leading-relaxed mb-6 max-w-xl">
+            国庆假期的户外演出。场地的自带混响恰到好处，演奏状态放松了很多，也收获了不少好评。
+          </p>
+          <div className="bg-surface rounded-lg overflow-hidden border border-surface">
+            <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+              <iframe
+                src="https://player.bilibili.com/player.html?bvid=BV1DKymBfEMD&page=1&high_quality=1"
+                className="absolute inset-0 w-full h-full"
+                allowFullScreen
+                title="青木乐队在玩家艺术节-20251006"
+              />
+            </div>
           </div>
         </div>
 
