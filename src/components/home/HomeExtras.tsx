@@ -20,7 +20,12 @@ export function HomeExtras() {
           href="/videos"
           className="group relative aspect-[3/2] bg-surface rounded-lg overflow-hidden"
         >
-          <div className="absolute inset-0 bg-gradient-to-br from-accent-dim/20 to-background flex items-center justify-center">
+          <img
+            src="/images/video-cover.jpg"
+            alt="视频"
+            className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+          />
+          <div className="absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300 flex items-center justify-center">
             <div className="text-center">
               <div className="w-12 h-12 mx-auto mb-2 rounded-full bg-accent/20 flex items-center justify-center group-hover:bg-accent/30 transition-colors">
                 <svg className="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 24 24">
