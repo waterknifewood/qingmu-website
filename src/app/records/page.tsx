@@ -34,15 +34,11 @@ const COLUMNS = [
 export default function RecordsPage() {
   return (
     <Container className="py-24">
-      <p className="text-center text-sm font-serif text-accent-dim italic mb-2">
-        史家无曲笔
-      </p>
-
       <h2 className="text-2xl font-serif font-bold text-foreground text-center mb-2">
         记录
       </h2>
       <p className="text-sm text-muted text-center mb-20 max-w-xl mx-auto leading-loose">
-        一些关于创作、演出和生活的碎碎念。记录本身就是意义。
+        史家无曲笔。一些关于创作、演出和生活的碎碎念。记录本身就是意义。
       </p>
 
       <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
